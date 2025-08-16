@@ -7,10 +7,12 @@ import {
   useTheme,
   useMediaQuery,
   Skeleton,
+  IconButton,
 } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
 import ImageGallery from 'react-image-gallery';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Close } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Reveal from '../common/Reveal';
 
@@ -57,6 +59,10 @@ const GalleryComponent: React.FC<ImageGalleryProps> = ({ images, categories }) =
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
+  };
+
+  const handleCloseLightbox = () => {
+    setLightboxOpen(false);
   };
 
   return (
@@ -258,6 +264,27 @@ const GalleryComponent: React.FC<ImageGalleryProps> = ({ images, categories }) =
               justifyContent: 'center',
             }}
           >
+            {/* Close Button */}
+            <IconButton
+              onClick={handleCloseLightbox}
+              sx={{
+                position: 'absolute',
+                top: 20,
+                right: 20,
+                zIndex: 1400,
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  transform: 'scale(1.1)',
+                },
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <Close />
+            </IconButton>
+
             <Box
               sx={{
                 width: '100%',

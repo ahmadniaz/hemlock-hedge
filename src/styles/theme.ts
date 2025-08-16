@@ -3,14 +3,14 @@ import { createTheme } from '@mui/material/styles';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#2D4A36', // Deep Forest Green
-      light: '#4A6B52',
-      dark: '#1E3124',
+      main: '#1B4332', // Dark Forest Green
+      light: '#2D6A4F',
+      dark: '#081C15',
     },
     secondary: {
-      main: '#B8860B', // Dark Golden Rod
-      light: '#D4A012',
-      dark: '#8B6508',
+      main: '#8B0000', // Burgundy
+      light: '#A52A2A',
+      dark: '#5D0000',
     },
     accent: {
       main: '#D4A574', // Warm Beige
@@ -18,12 +18,27 @@ export const theme = createTheme({
       dark: '#B8945A',
     },
     background: {
-      default: '#FAF9F6', // Warm White
+      default: '#F5F5DC', // Beige background
       paper: '#FFFFFF',
     },
     text: {
       primary: '#2C2C2C',
       secondary: '#6B6B6B',
+    },
+    success: {
+      main: '#2D6A4F', // Green
+      light: '#40916C',
+      dark: '#1B4332',
+    },
+    warning: {
+      main: '#D4A574', // Beige
+      light: '#E6C9A3',
+      dark: '#B8945A',
+    },
+    info: {
+      main: '#8B0000', // Burgundy
+      light: '#A52A2A',
+      dark: '#5D0000',
     },
   },
   typography: {
@@ -110,9 +125,9 @@ export const theme = createTheme({
           },
         },
         contained: {
-          boxShadow: '0 4px 14px 0 rgba(45, 74, 54, 0.39)',
+          boxShadow: '0 4px 14px 0 rgba(27, 67, 50, 0.39)',
           '&:hover': {
-            boxShadow: '0 6px 20px 0 rgba(45, 74, 54, 0.49)',
+            boxShadow: '0 6px 20px 0 rgba(27, 67, 50, 0.49)',
           },
         },
         outlined: {

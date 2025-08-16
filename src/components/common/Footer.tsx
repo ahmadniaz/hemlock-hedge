@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
               }}
             >
               Experience luxury and tranquility at our 4,000 sq ft lodge on 100+ acres featuring a private 15-acre lake, 
-              sleeping 16 guests in complete privacy.
+              sleeping 24 guests in complete privacy.
             </Typography>
             <Box sx={{ display: 'flex', gap: 1 }}>
               {socialLinks.map((social) => (

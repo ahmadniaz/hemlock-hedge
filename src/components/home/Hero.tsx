@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ onBookingClick }) => {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(45, 74, 54, 0.2) 0%, rgba(184, 134, 11, 0.1) 100%)',
+          background: 'linear-gradient(135deg, rgba(27, 67, 50, 0.2) 0%, rgba(139, 0, 0, 0.1) 100%)',
         }}
       />
 
@@ -141,7 +141,7 @@ const Hero: React.FC<HeroProps> = ({ onBookingClick }) => {
               }}
             >
               Experience luxury and tranquility at our 4,000 sq ft lodge on 100+ acres featuring a private 15-acre lake, 
-              sleeping 16 guests in complete privacy.
+              sleeping 24 guests in complete privacy.
             </Typography>
           </motion.div>
 
@@ -168,11 +168,11 @@ const Hero: React.FC<HeroProps> = ({ onBookingClick }) => {
                   px: 4,
                   py: 1.5,
                   fontSize: '1.1rem',
-                  background: 'linear-gradient(135deg, #B8860B 0%, #D4A012 100%)',
-                  boxShadow: '0 8px 24px rgba(184, 134, 11, 0.4)',
+                  background: 'linear-gradient(135deg, #8B0000 0%, #A52A2A 100%)',
+                  boxShadow: '0 8px 24px rgba(139, 0, 0, 0.4)',
                   '&:hover': {
-                    background: 'linear-gradient(135deg, #8B6508 0%, #B8860B 100%)',
-                    boxShadow: '0 12px 32px rgba(184, 134, 11, 0.6)',
+                    background: 'linear-gradient(135deg, #5D0000 0%, #8B0000 100%)',
+                    boxShadow: '0 12px 32px rgba(139, 0, 0, 0.6)',
                     transform: 'translateY(-2px)',
                   },
                 }}

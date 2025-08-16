@@ -37,12 +37,48 @@ import { motion } from 'framer-motion';
 
 const Activities: React.FC = () => {
   const onPropertyActivities = [
-    { icon: Water, title: 'Fishing', description: 'Great fishing on Pine Lake with perch, pickerel, and catfish. PA license required.' },
-    { icon: Water, title: 'Boating & Canoeing', description: 'Canoe, row boat, paddle boat, and 4 kayaks available on the private lake.' },
-    { icon: DirectionsWalk, title: 'Hiking', description: 'Numerous trails bordered by blueberry bushes and diverse ecology.' },
-    { icon: Nature, title: 'Wildlife Viewing', description: 'Deer, beaver, bear, and various woodland creatures share the habitat.' },
-    { icon: SportsEsports, title: 'Game Room', description: 'Pool table, air hockey, foosball, dart board, and 50" plasma TV.' },
-    { icon: Nature, title: 'Berry Picking', description: 'Wild blueberry bushes throughout the property, usually ripe mid-August.' },
+    { 
+      icon: DownhillSkiing, 
+      title: 'Skiing', 
+      description: 'World-class skiing at Elk Mountain Ski Resort, just 15 minutes away. Perfect for winter adventures.',
+      bgColor: '#8B0000', // Burgundy
+      iconBgColor: '#FFFFFF'
+    },
+    { 
+      icon: Water, 
+      title: 'Fishing', 
+      description: 'Great fishing on Pine Lake with perch, pickerel, and catfish. PA license required. Catch and release.',
+      bgColor: '#2D6A4F', // Green
+      iconBgColor: '#FFFFFF'
+    },
+    { 
+      icon: Water, 
+      title: 'Boating & Canoeing', 
+      description: 'Canoe, row boat, paddle boat, and several kayaks available on the private lake.',
+      bgColor: '#1B4332', // Dark Green
+      iconBgColor: '#FFFFFF'
+    },
+    { 
+      icon: DirectionsWalk, 
+      title: 'Hiking & Berry Picking', 
+      description: 'Numerous trails bordered by blueberry bushes and diverse ecology. Wild blueberries usually ripe mid-August.',
+      bgColor: '#D4A574', // Beige
+      iconBgColor: '#1B4332'
+    },
+    { 
+      icon: Nature, 
+      title: 'Wildlife Viewing', 
+      description: 'Deer, beaver, bear, and various woodland creatures share the habitat.',
+      bgColor: '#8B6508', // Dark Gold
+      iconBgColor: '#FFFFFF'
+    },
+    { 
+      icon: SportsEsports, 
+      title: 'Indoor Fun and Games', 
+      description: 'Pool table, air hockey, foosball, chess, video games, and 60" smart TV.',
+      bgColor: '#A52A2A', // Light Burgundy
+      iconBgColor: '#FFFFFF'
+    },
   ];
 
   const localActivities = {
@@ -107,7 +143,7 @@ const Activities: React.FC = () => {
         { name: 'Rock Creek Golf Course & Practice Range', phone: '(570) 222-2500', address: 'Exit 206 off Rt. 81, Lenoxville, PA' },
         { name: 'Homestead Golf Course', phone: '(570) 282-5197', address: 'RR 1, Rt. 106, Carbondale, PA 18407' },
         { name: 'Skyline Golf Course', phone: '(570) 282-5993', address: 'RR1, Rt. 247, Carbondale, PA 18407' },
-        { name: 'Sleepy Hollow Golf Course', phone: '(570) 254-4653', address: 'Chapman Lake Road, Carbondale, PA 18407' },
+        { name: 'Sleepy Hollow Golf Course', phone: '(570) 254-4653', address: 'Chapel Lake Road, Carbondale, PA 18407' },
         { name: 'Lake Lorain Golf Club', phone: '(570) 448-2232', address: 'Rt. 370, Poyntelle, PA 18454', description: '9 holes, driving range, pro shop, snack bar, restaurant/bar, club/cart rental.' },
         { name: 'Memorial Links', phone: '(570) 448-9200', address: 'Rt. 170, Pleasant Mount, PA 18453', description: '9 holes, reservations on weekends.' },
         { name: 'Shadowbrook Golf Course', phone: '(570) 836-5417', address: 'Rt. 6, Tunkhannock, PA 18657', description: '18 holes, reservations April - Sept., driving range, pro shop, golf school, snack bar, club/cart rental.' },
@@ -270,10 +306,10 @@ const Activities: React.FC = () => {
         <title>Activities - Hemlock Point Lodge</title>
         <meta 
           name="description" 
-          content="Explore endless activities at Hemlock Point Lodge. From fishing and kayaking on our private lake to hiking trails, skiing, golf, and local attractions." 
+          content="Explore endless activities at Hemlock Point Lodge. From skiing and fishing on our private lake to hiking trails, golf, and local attractions." 
         />
         <meta property="og:title" content="Activities - Hemlock Point Lodge" />
-        <meta property="og:description" content="Explore endless activities at Hemlock Point Lodge. From fishing and kayaking on our private lake to hiking trails, skiing, golf, and local attractions." />
+        <meta property="og:description" content="Explore endless activities at Hemlock Point Lodge. From skiing and fishing on our private lake to hiking trails, golf, and local attractions." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://hemlockpointlodge.com/activities" />
       </Helmet>
@@ -305,25 +341,38 @@ const Activities: React.FC = () => {
             <Grid container spacing={3} sx={{ mb: 6 }}>
               {onPropertyActivities.map((activity, index) => (
                 <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-                  <Card sx={{ height: '100%' }}>
+                  <Card sx={{ 
+                    height: '100%',
+                    backgroundColor: '#F5F5DC', // Rustic beige background
+                    '&:hover': {
+                      transform: 'translateY(-8px)',
+                      boxShadow: '0 12px 40px 0 rgba(0, 0, 0, 0.2)',
+                    }
+                  }}>
                     <CardContent sx={{ p: 3, textAlign: 'center' }}>
                       <Box
                         sx={{
-                          width: 60,
-                          height: 60,
+                          width: 70,
+                          height: 70,
                           borderRadius: '50%',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          mb: 2,
+                          mb: 3,
                           mx: 'auto',
-                          backgroundColor: 'primary.main',
-                          color: 'white',
+                          backgroundColor: activity.bgColor,
+                          color: activity.iconBgColor,
+                          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                          transition: 'all 0.3s ease',
+                          '&:hover': {
+                            transform: 'scale(1.1)',
+                            boxShadow: '0 6px 20px rgba(0,0,0,0.25)',
+                          }
                         }}
                       >
-                        <activity.icon sx={{ fontSize: 30 }} />
+                        <activity.icon sx={{ fontSize: 35 }} />
                       </Box>
-                      <Typography variant="h6" component="h3" sx={{ mb: 2 }}>
+                      <Typography variant="h6" component="h3" sx={{ mb: 2, fontWeight: 600 }}>
                         {activity.title}
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
@@ -350,7 +399,13 @@ const Activities: React.FC = () => {
             </Typography>
 
             {Object.entries(localActivities).map(([key, category], index) => (
-              <Accordion key={key} sx={{ mb: 2 }}>
+              <Accordion key={key} sx={{ 
+                mb: 2,
+                backgroundColor: '#F5F5DC', // Rustic beige background
+                '&:hover': {
+                  backgroundColor: '#E6D7C3', // Slightly darker beige on hover
+                }
+              }}>
                 <AccordionSummary expandIcon={<ExpandMore />}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                     <category.icon sx={{ color: 'primary.main' }} />

@@ -1,11 +1,11 @@
 export const LODGE_CONFIG = {
   name: 'Hemlock Point Lodge',
   tagline: 'Your Private Adirondack Sanctuary',
-  description: 'Experience luxury and tranquility at Hemlock Point Lodge. Our 4,000 sq ft lodge on 100+ acres features a private 15-acre lake, sleeping 16 guests in complete privacy.',
+  description: 'Experience luxury and tranquility at Hemlock Point Lodge. Our 4,000 sq ft lodge on 100+ acres features a private 15-acre lake, sleeping 24 guests in complete privacy.',
   
   // Contact Information
   contact: {
-    phone: '+1 (555) 123-4567',
+    phone: '(570) 727-2065',
     email: 'info@hemlockpointlodge.com',
     address: '3159 May Road, Thompson, PA 18465',
     gpsCoordinates: {
@@ -21,9 +21,9 @@ export const LODGE_CONFIG = {
     size: '4,000 sq ft',
     acres: '100+',
     lakeSize: '15-acre private lake',
-    capacity: 16,
-    bedrooms: 6,
-    bathrooms: 4,
+    capacity: 24,
+    bedrooms: 8,
+    bathrooms: 6,
   },
   
   // Image Paths - using public assets
@@ -52,7 +52,10 @@ export const LODGE_CONFIG = {
     { name: 'WiFi & Smart TV', icon: 'WifiIcon' },
     { name: 'Fireplace', icon: 'LocalFireDepartmentIcon' },
     { name: 'Outdoor Grill', icon: 'OutdoorGrillIcon' },
-    { name: 'Fishing Equipment', icon: 'FishingIcon' },
+    { name: 'Sauna', icon: 'HotTubIcon' },
+    { name: 'Sandy Volleyball/Badminton Court', icon: 'SportsTennisIcon' },
+    { name: 'Outdoor Fire Pit', icon: 'LocalFireDepartmentIcon' },
+    { name: 'Outdoor Living Room', icon: 'DeckIcon' },
     { name: 'Hiking Trails', icon: 'HikingIcon' },
     { name: 'Parking', icon: 'LocalParkingIcon' },
   ],
@@ -64,10 +67,10 @@ export const LODGE_CONFIG = {
         category: 'Water Activities',
         icon: 'WaterIcon',
         activities: [
-          'Swimming in private lake',
           'Fishing (catch & release)',
           'Kayaking & canoeing',
           'Lakeside relaxation',
+          'Boating on private lake',
         ],
         images: ['/assets/activity/activity1.jpg', '/assets/activity/activity2.jpg'],
       },
@@ -79,6 +82,7 @@ export const LODGE_CONFIG = {
           'Wildlife watching',
           'Outdoor dining',
           'Stargazing',
+          'Berry picking',
         ],
         images: ['/assets/activity/activity3.jpg', '/assets/activity/activity4.jpg'],
       },
@@ -92,6 +96,7 @@ export const LODGE_CONFIG = {
           'Local restaurants & shops',
           'Historical sites',
           'Seasonal festivals',
+          'Elk Lodge (15 minutes away)',
         ],
         images: ['/assets/activity/activity5.jpg', '/assets/activity/activity6.jpg'],
       },
@@ -129,10 +134,10 @@ export const LODGE_CONFIG = {
       image: '/assets/interior/interior4.jpg',
     },
     {
-      name: '16 Friends from NYC',
+      name: '24 Friends from NYC',
       location: 'New York City',
       rating: 5,
-      text: 'We can\'t even begin to describe how much joy your house brought us this weekend. For 16 friends from New York City, this was exactly what we needed to get away and relax. Your house is absolutely stunning, from the land to the last details of construction, especially the hot tub! Thanks so much for sharing your home. We can\'t wait to do it again.',
+      text: 'We can\'t even begin to describe how much joy your house brought us this weekend. For 24 friends from New York City, this was exactly what we needed to get away and relax. Your house is absolutely stunning, from the land to the last details of construction, especially the sauna! Thanks so much for sharing your home. We can\'t wait to do it again.',
       image: '/assets/interior/interior5.jpg',
     },
     {
@@ -181,14 +186,14 @@ export const LODGE_CONFIG = {
       name: 'Nature Explorers',
       location: 'Guest Book Entry',
       rating: 5,
-      text: 'We stayed at the lodge. We explored the trails and traveled across the lake by rowboat, canoe, paddle boat and kayak. We enjoyed the frogs, the sounds especially of the bull frogs and tree frogs. At night we searched the blueberry bushes for the tree peppers. The blend of nature and comfort far exceeded our expectations. We love the ipod accommodations and the doored game room. The space allowed us to be together, yet be separate. Thanks for sharing your place with us.',
+      text: 'We stayed at the lodge. We explored the trails and traveled across the lake by rowboat, canoe, paddle boat and kayak. We enjoyed the frogs, the sounds especially of the bull frogs and tree frogs. At night we searched the blueberry bushes for the tree peppers. The blend of nature and comfort far exceeded our expectations. We love the smart TV accommodations and the doored game room. The space allowed us to be together, yet be separate. Thanks for sharing your place with us.',
       image: '/assets/activity/activity2.jpg',
     },
     {
       name: 'Family with 5-Year-Old',
       location: 'Guest Book Entry',
       rating: 5,
-      text: 'We thoroughly enjoyed our vacation here at the lodge. We fished, we went boating and we spent many nights in the hot tub. We also enjoyed watching our almost 5 year old enjoy everything around here with his family',
+      text: 'We thoroughly enjoyed our vacation here at the lodge. We fished, we went boating and we spent many nights in the sauna. We also enjoyed watching our almost 5 year old enjoy everything around here with his family',
       image: '/assets/activity/activity3.jpg',
     },
     {
@@ -223,7 +228,7 @@ export const LODGE_CONFIG = {
       name: 'Family with Kids',
       location: 'Guest Book Entry',
       rating: 5,
-      text: 'This place is just incredible. We loved everything about it. The details of the house are just unbelievable. We loved the house, the lake, the kayaks, the canoe, the hot tub, the walking trails – and, of course, the blueberries. They were wonderful in the pancakes. Our kids didn\'t want to go home and want to know when we will be back. Love it!',
+      text: 'This place is just incredible. We loved everything about it. The details of the house are just unbelievable. We loved the house, the lake, the kayaks, the canoe, the sauna, the walking trails – and, of course, the blueberries. They were wonderful in the pancakes. Our kids didn\'t want to go home and want to know when we will be back. Love it!',
       image: '/assets/kitchen/kitchen1.jpg',
     },
     {
@@ -317,7 +322,7 @@ export const LODGE_CONFIG = {
     },
     {
       question: 'What should we bring?',
-      answer: 'We provide all linens, towels, and basic amenities. Bring personal items, groceries, and any specific outdoor gear you prefer.',
+      answer: 'We provide all linens, towels, and basic amenities. Bring personal items, groceries, fishing gear for catch and release, and any specific outdoor gear you prefer.',
     },
     {
       question: 'Is there cell service and WiFi?',

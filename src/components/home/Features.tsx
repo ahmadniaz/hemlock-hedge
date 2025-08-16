@@ -17,6 +17,9 @@ import {
   OutdoorGrill as GrillIcon,
   Park as HikingIcon,
   LocalParking as ParkingIcon,
+  HotTub as SaunaIcon,
+  SportsTennis as TennisIcon,
+  Deck as DeckIcon,
 } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 import Reveal from '../common/Reveal';
@@ -30,50 +33,50 @@ const Features: React.FC = () => {
     {
       icon: WaterIcon,
       title: 'Private Lake Access',
-      description: 'Exclusive access to our pristine 15-acre private lake for swimming, fishing, and water activities.',
-      color: '#4A90E2',
+      description: 'Exclusive access to our pristine 15-acre private lake for boating, canoeing, and water activities.',
+      color: '#2D6A4F',
     },
     {
       icon: KitchenIcon,
       title: 'Fully Equipped Kitchen',
       description: 'Gourmet kitchen with premium appliances, perfect for preparing memorable family meals.',
-      color: '#F5A623',
+      color: '#8B0000',
     },
     {
       icon: WifiIcon,
       title: 'WiFi & Smart TV',
-      description: 'High-speed internet and entertainment systems to stay connected while enjoying nature.',
-      color: '#7ED321',
+      description: 'High-speed internet and 60" smart TV with surround sound to stay connected while enjoying nature.',
+      color: '#1B4332',
     },
     {
       icon: FireplaceIcon,
       title: 'Cozy Fireplace',
       description: 'Stone fireplace in the great room, creating the perfect ambiance for evening relaxation.',
-      color: '#D0021B',
+      color: '#D4A574',
     },
     {
-      icon: GrillIcon,
-      title: 'Outdoor Grill',
-      description: 'Professional outdoor grill and dining area for al fresco meals with lake views.',
-      color: '#9013FE',
+      icon: SaunaIcon,
+      title: 'Sauna',
+      description: 'Relaxing sauna for ultimate comfort and rejuvenation after a day of outdoor activities.',
+      color: '#8B6508',
     },
     {
-      icon: HikingIcon,
-      title: 'Fishing Equipment',
-      description: 'Complete fishing gear provided for catch-and-release fishing in our private lake.',
-      color: '#50E3C2',
+      icon: TennisIcon,
+      title: 'Sandy Volleyball/Badminton Court',
+      description: 'Outdoor sports court for friendly competition and active fun in the fresh mountain air.',
+      color: '#A52A2A',
+    },
+    {
+      icon: DeckIcon,
+      title: 'Outdoor Living Room',
+      description: 'Comfortable outdoor seating area with fire pit for smores and enjoying the natural surroundings.',
+      color: '#4A6B52',
     },
     {
       icon: HikingIcon,
       title: 'Hiking Trails',
       description: 'Private trails through 100+ acres of pristine forest and rolling meadows.',
-      color: '#4A4A4A',
-    },
-    {
-      icon: ParkingIcon,
-      title: 'Ample Parking',
-      description: 'Spacious parking area accommodating multiple vehicles for large groups.',
-      color: '#BD10E0',
+      color: '#40916C',
     },
   ];
 
@@ -153,13 +156,13 @@ const Features: React.FC = () => {
                     sx={{
                       height: '100%',
                       borderRadius: 3,
-                      background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%)',
-                      backdropFilter: 'blur(10px)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      backgroundColor: '#F5F5DC',
+                      border: '1px solid rgba(212, 165, 116, 0.2)',
                       boxShadow: '0 4px 24px rgba(0, 0, 0, 0.08)',
                       transition: 'all 0.3s ease',
                       '&:hover': {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
+                        backgroundColor: '#E6D7C3',
                       },
                     }}
                   >
@@ -237,8 +240,8 @@ const Features: React.FC = () => {
               mt: { xs: 8, md: 12 },
               p: 4,
               borderRadius: 3,
-              background: 'linear-gradient(135deg, rgba(45, 74, 54, 0.05) 0%, rgba(184, 134, 11, 0.05) 100%)',
-              border: '1px solid rgba(45, 74, 54, 0.1)',
+              backgroundColor: '#F5F5DC',
+              border: '1px solid rgba(27, 67, 50, 0.1)',
             }}
           >
             <Grid container spacing={4} justifyContent="center">

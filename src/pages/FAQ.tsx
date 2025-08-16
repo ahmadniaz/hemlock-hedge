@@ -309,7 +309,7 @@ const faqData: FAQItem[] = [
           <ListItemIcon>
             <CheckCircleOutlineIcon color="primary" fontSize="small" />
           </ListItemIcon>
-          <ListItemText primary="No more than 16 people on the property at any time. The septic system cannot handle the additional usage" />
+          <ListItemText primary="No more than 24 people on the property at any time. The septic system cannot handle the additional usage" />
         </ListItem>
         <ListItem>
           <ListItemIcon>
@@ -392,7 +392,7 @@ const faqData: FAQItem[] = [
     id: 'tv',
     category: 'practical',
     question: 'Is there a TV?',
-    answer: 'Yes. It is a 50 inch plasma with surround sound. There is only one TV in the house and is located in the game room.',
+    answer: 'Yes. It is a 60" smart TV with surround sound. There is only one TV in the house and is located in the indoor fun and games area.',
     tags: ['tv', 'entertainment', 'game room', 'amenities'],
     priority: 6,
   },
@@ -423,8 +423,8 @@ const faqData: FAQItem[] = [
   {
     id: 'game-room',
     category: 'activities',
-    question: 'Do you have a game room?',
-    answer: 'Yes, and it\'s the best around! Take a look at the floor plan for a better view. It has a 50" flat screen TV with surround sound or you can play a CD or plug in your own iPod. There is also a pool table, foosball table, ping pong table, card table, chess table, and air hockey table. You (and the kids) will not be bored on a rainy day.',
+    question: 'Do you have an indoor fun and games area?',
+    answer: 'Yes, and it\'s the best around! Take a look at the floor plan for a better view. It has a 60" smart TV with surround sound. There is also a pool table, foosball table, ping pong table, card table, chess table, and air hockey table. You (and the kids) will not be bored on a rainy day.',
     tags: ['game room', 'entertainment', 'indoor activities', 'pool table', 'foosball'],
     priority: 7,
   },
@@ -432,7 +432,7 @@ const faqData: FAQItem[] = [
     id: 'bathrooms',
     category: 'practical',
     question: 'How many bathrooms are there?',
-    answer: 'There are four full bathrooms and a powder room.',
+    answer: 'There are six full bathrooms.',
     tags: ['bathrooms', 'amenities', 'facilities'],
     priority: 6,
   },
@@ -559,7 +559,7 @@ const faqData: FAQItem[] = [
     id: 'emergency',
     category: 'accessibility',
     question: 'What do we do if there is an emergency?',
-    answer: `Call 911: The Lodge driveway is located ¼ mile south of Oxbow Road on Wrighter Lake Road. The property is just south of Wrighter Lake and north of Dunn Lake. The driveway entrance is across from the red barn on Wrighter Lake Road. The official address is 3159 May Road, Thompson, PA 18465 but it is not marked. Any questions or concerns that do not warrant police, fire, or ambulance please call (973) 521-1007 and we will try to help you. We will provide our cell phone numbers when you book.`,
+    answer: `Call 911: The Lodge driveway is located ¼ mile south of Oxbow Road on Wrighter Lake Road. The property is just south of Wrighter Lake and north of Dunn Lake. The driveway entrance is across from the red barn on Wrighter Lake Road. The official address is 3159 May Road, Thompson, PA 18465 but it is not marked. Any questions or concerns that do not warrant police, fire, or ambulance please call 570-727-2065 and we will try to help you. We will provide our cell phone numbers when you book.`,
     tags: ['emergency', '911', 'directions', 'contact'],
     priority: 9,
   },
@@ -567,7 +567,7 @@ const faqData: FAQItem[] = [
     id: 'kid-friendly',
     category: 'accessibility',
     question: 'Is the house "Kid Friendly"?',
-    answer: 'No more than any other house with a lake, hot tub, and stairs. You must watch your children. We do not have safety locks on the kitchen cabinets. We do not have blank plugs in the electrical receptacles. The stair to the second floor does not have a gate.',
+    answer: 'No more than any other house with a lake, sauna, and stairs. You must watch your children. We do not have safety locks on the kitchen cabinets. We do not have blank plugs in the electrical receptacles. The stair to the second floor does not have a gate.',
     tags: ['children', 'safety', 'kid friendly', 'supervision'],
     priority: 7,
   },
@@ -959,7 +959,7 @@ const FAQ: React.FC = () => {
               <Button 
                 variant="outlined" 
                 size="large"
-                href="tel:+19735211007"
+                href="tel:570-727-2065"
                 startIcon={<LocalPhoneIcon />}
                 sx={{ minWidth: 200 }}
               >
